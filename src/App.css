@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: 0;
+}
+
+html,
+body,
+#aoi {
+  height: 100%;
+}
+
+body,
+input,
+button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #eeeeee;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 64px;
+  height: 100vh;
+  align-content: flex-start;
+}
+
+.container .header {
+  background: #4a90e2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .header > img {
+  margin-left: 40px;
+}
+
+.container .header .profile {
+  margin-right: 40px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.container .header .profile img {
+  border-radius: 50%;
+  height: 30px;
+  border: solid 2px #fff;
+  margin-left: 10px;
+}
+
+.container .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .content .board {
+  max-width: 700px;
+  background: White;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.133916);
+  padding: 20px;
+}
+
+.container .content .board .top {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content .board .top .profile {
+  display: flex;
+}
+
+.container .content .board .top .profile img {
+  border-radius: 50%;
+}
+
+.container .content .board .top .profile .user {
+  margin-left: 10px;
+}
+
+.container .content .board .top .profile .user p {
+  color: #3e3e3e;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.container .content .board .top .profile .user small {
+  color: #9a9a9a;
+}
+
+.container .content .board .top .phrase {
+  margin: 20px auto;
+  color: #3e3e3e;
+  font-size: 14px;
+}
+
+.line-separator {
+  height: 1px;
+  background: #eeeeee;
+}
+
+.container .content .comments {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.container .content .comments > div {
+  display: flex;
+  align-items: flex-start;
+  margin: 5px auto;
+}
+
+.container .content .comments img {
+  border-radius: 50%;
+}
+
+.container .content .comments div div {
+  margin-left: 15px;
+  font-size: 13px;
+  color: #3e3e3e;
+  background: #eee;
+  padding: 15px;
+  border-radius: 20px;
+}
